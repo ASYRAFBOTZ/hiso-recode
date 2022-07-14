@@ -2821,7 +2821,7 @@ case 'command':{
                                         {
                                             "title": "Information Of The Bot",
                                             "description": "මෙය හරහ මෙම Bot ගේ අයිති කරුගෙ විස්තර ලබ ගත හැක",
-                                            "rowId": `${prefix}caption`
+                                            "rowId": `${prefix}oshada`
                                         },
                                         {
                                             "title": "owner Menu",
