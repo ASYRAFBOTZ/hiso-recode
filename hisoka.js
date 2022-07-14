@@ -160,14 +160,15 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
             scheduled: true,
             timezone: "Asia/Jakarta"
         })
-          //auto bio
-	  if (db.data.settings[botNumber].autobio) {
-        let setting = global.db.data.settings[botNumber]
-        if (new Date() * 1 - setting.status > 1000) {
-        let uptime = await runtime(process.uptime())
-        await hisoka.setStatus(`${'©V I M U K T H I - ⛧ S A T H A N ⸸  | BOT ONLINE'} | Runtime : ${runtime(process.uptime())} `)
-        setting.status = new Date() * 1
-        }
+        
+	// auto set bio
+	if (db.data.settings[botNumber].autobio) {
+	    let setting = global.db.data.settings[botNumber]
+	    if (new Date() * 1 - setting.status > 1000) {
+		let uptime = await runtime(process.uptime())
+		await hisoka.setStatus(`${hisoka.user.name} | Runtime : ${runtime(uptime)}`)
+		setting.status = new Date() * 1
+	    }
 	}
 	    
 	  // Anti Link
@@ -2203,7 +2204,7 @@ break
 	        case 'fbdl': case 'fb': case 'facebook': {
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(api('zenz', '/api/downloader/fa', { url: text }, '92170802cb1a'))
+                let anu = await fetchJson(api('zenz', '/api/downloader/facebook', { url: text }, 'apikey'))
                 hisoka.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `⛧⸸ Title : ${anu.result.title}`}, { quoted: m })
             }
             break
