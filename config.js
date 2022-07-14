@@ -9,19 +9,19 @@ const chalk = require('chalk')
 
 // Website Api
 global.APIs = {
-	zenz: 'https://zenzapis.xyz',
+	zenz: 'https://api.zeeoneofc.xyz',
 }
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapis.xyz': 'Your Key',
+	'https://api.zeeoneofc.xyz': 'XGwvPEbx',
 }
 
 // Other
-global.owner = ['6283167714830','6281382420312','6287721317870','6288292024190']
-global.premium = ['6288292024190']
-global.packname = 'Hisoka Morrow'
-global.author = 'WhatsApp Bot'
+global.owner = ['94775792013']
+global.premium = ['94775792013']
+global.packname = '⛧ S A T H A N ⸸'
+global.author = '⛧ S A T H A N ⸸'
 global.sessionName = 'hisoka'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
@@ -41,7 +41,7 @@ global.limitawal = {
     free: 100
 }
 global.thumb = fs.readFileSync('./lib/hisoka.jpg')
-global.visoka = { url: 'https://telegra.ph/file/15209657f9d4f59c7ca1e.mp4' }
+global.visoka = { url: 'https://telegra.ph/file/39c0aba89c1281605b7de.mp4' }
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
