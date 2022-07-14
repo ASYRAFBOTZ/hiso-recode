@@ -1581,7 +1581,7 @@ break
         })
         }
         break
-	    case 'play': case 'ytplay': {
+	    case 'play': case 'ytplay': case 'song' : {
                 if (!text) throw `Example : ${prefix + command} story wa anime`
                 let yts = require("yt-search")
                 let search = await yts(text)
