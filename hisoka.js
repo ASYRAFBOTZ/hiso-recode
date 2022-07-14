@@ -561,7 +561,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'Not Avalibale' }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://wa.me+94775792013' }, { quoted: m })
             }
             break
             case 'sc': {
@@ -3212,11 +3212,11 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                             }]
                          let setbot = db.data.settings[botNumber]
                         if (setbot.templateImage) {
-                        hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn, global.thumb)
+                        hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.visoka, btn, global.visoka)
                         } else if (setbot.templateGif) {
-                        hisoka.send5ButGif(m.chat, anu, hisoka.user.name, global.visoka, btn, global.thumb)
+                        hisoka.send5ButGif(m.chat, anu, hisoka.user.name, global.visoka, btn, global.visoka)
                         } else if (setbot.templateVid) {
-                        hisoka.send5ButVid(m.chat, anu, hisoka.user.name, global.visoka, btn, global.thumb)
+                        hisoka.send5ButVid(m.chat, anu, hisoka.user.name, global.visoka, btn, global.visoka)
                         } else if (setbot.templateMsg) {
                         hisoka.send5ButMsg(m.chat, anu, hisoka.user.name, btn)
                         } else if (setbot.templateLocation) {
@@ -4365,15 +4365,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                 
                 case 'donasi': {
                 anu = `╭─❏ *『 DONASI 』*
-                │ ⛧⸸  Dana : 085822347348
-                │ ⛧⸸  Pulsa : 085822347348,083843192208
+                │ ⛧⸸  Dana : 94775792013
+                │ ⛧⸸  Pulsa : 94775792013,94775792013
                 ╰───────────────❏
                 
                 *TERIMA KASIH BUAT YANG SUDAH MAU DONASI🤗*`
                 let btn = [{
                                                 urlButton: {
                                                     displayText: 'owner📽️',
-                                                    url: '085822347348'
+                                                    url: '94775792013'
                                                 }
                                                 }, {
                                                 urlButton: {
