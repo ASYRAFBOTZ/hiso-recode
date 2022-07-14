@@ -27,6 +27,7 @@ global.author = '⛧ S A T H A N ⸸'
 global.sessionName = 'hisoka'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
+global.themeemoji = "🦄"
 global.mess = {
     success: '✓ Success',
     admin: 'Fitur Khusus Admin Group!',
