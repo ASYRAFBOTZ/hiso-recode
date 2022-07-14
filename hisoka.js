@@ -118,20 +118,20 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    if (!('anticall' in setting)) setting.anticall = true
 		if (!isNumber(setting.status)) setting.status = 0
 		if (!('autobio' in setting)) setting.autobio = true
-		if (!('templateGif' in setting)) setting.templateGif = false
-		if (!('templateGif' in setting)) setting.templateGif = false
+		if (!('templateImage' in setting)) setting.templateImage = false
+		if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = true
-		if (!('templateGif' in setting)) setting.templateGif = false
-		if (!('templateGif' in setting)) setting.templateGif = false
+		if (!('templateMsg' in setting)) setting.templateMsg = false
+		if (!('templateLocation' in setting)) setting.templateLocation = false
 	    } else global.db.data.settings[botNumber] = {
 	    anticall: true,
 		status: 0,
 		autobio: false,
-		templateGif: true,
+		templateImage: true,
+		templateVideo: false,
 		templateGif: false,
-		templateGif: false,
-		templateGif: false,
-		templateGif: false,
+		templateMsg: false,
+		templateLocation: false,
 	    }
 	    
         } catch (err) {
@@ -2742,51 +2742,51 @@ let capt = `⛧⸸ Title: ${judul}
             case 'setmenu': {
             if (!isCreator) throw mess.owner
             let setbot = db.data.settings[botNumber]
-               if (args[0] === 'templateGif'){
-                setbot.templateGif = true
+               if (args[0] === 'templateImage'){
+                setbot.templateImage = true
+                setbot.templateVideo = false
                 setbot.templateGif = false
+                setbot.templateMsg = false
+                setbot.templateLocation = false
+                m.reply(mess.success)
+                } else if (args[0] === 'templateVideo'){
+                setbot.templateImage = false
+                setbot.templateVideo = true
                 setbot.templateGif = false
-                setbot.templateGif = false
-                setbot.templateGif = false
+                setbot.templateMsg = false
+                setbot.templateLocation = false
                 m.reply(mess.success)
                 } else if (args[0] === 'templateGif'){
-                setbot.templateGif = false
+                setbot.templateImage = false
+                setbot.templateVideo = false
                 setbot.templateGif = true
-                setbot.templateGif = false
-                setbot.templateGif = false
-                setbot.templateGif = false
-                m.reply(mess.success)
-                } else if (args[0] === 'templateGif'){
-                setbot.templateGif = false
-                setbot.templateGif = false
-                setbot.templateGif = true
-                setbot.templateGif = false
-                setbot.templateGif = false
+                setbot.templateMsg = false
+                setbot.templateLocation = false
                 m.reply(mess.success)
                 } else if (args[0] === 'templateMessage'){
+                setbot.templateImage = false
+                setbot.templateVideo = false
                 setbot.templateGif = false
-                setbot.templateGif = false
-                setbot.templateGif = false
-                setbot.templateGif = true
-                setbot.templateGif = false
+                setbot.templateMsg = true
+                setbot.templateLocation = false
                 m.reply(mess.success)
-                } else if (args[0] === 'templateGif'){
+                } else if (args[0] === 'templateLocation'){
+                setbot.templateImage = false
+                setbot.templateVideo = false
                 setbot.templateGif = false
-                setbot.templateGif = false
-                setbot.templateGif = false
-                setbot.templateGif = false
-                setbot.templateGif = true
+                setbot.templateMsg = false
+                setbot.templateLocation = true
                 m.reply(mess.success)
                 } else {
                 let sections = [
                 {
                 title: "CHANGE MENU BOT",
                 rows: [
-                {title: "Template Image", rowId: `setmenu templateGif`, description: `Change menu bot to Template Image`},
-                {title: "Template Video", rowId: `setmenu templateGif`, description: `Change menu bot to Template Video`},
+                {title: "Template Image", rowId: `setmenu templateImage`, description: `Change menu bot to Template Image`},
+                {title: "Template Video", rowId: `setmenu templateVideo`, description: `Change menu bot to Template Video`},
                 {title: "Template Gif", rowId: `setmenu templateGif`, description: `Change menu bot to Template Gif`},
                 {title: "Template Message", rowId: `setmenu templateMessage`, description: `Change menu bot to Template Message`},
-                {title: "Template Location", rowId: `setmenu templateGif`, description: `Change menu bot to Template Location`}
+                {title: "Template Location", rowId: `setmenu templateLocation`, description: `Change menu bot to Template Location`}
                 ]
                 },
                 ]
@@ -3205,15 +3205,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
-                        if (setbot.templateGif) {
+                        if (setbot.templateImage) {
                         hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn, global.thumb)
                         } else if (setbot.templateGif) {
                         hisoka.send5ButGif(m.chat, anu, hisoka.user.name, global.visoka, btn, global.thumb)
                         } else if (setbot.templateVid) {
                         hisoka.send5ButVid(m.chat, anu, hisoka.user.name, global.visoka, btn, global.thumb)
-                        } else if (setbot.templateGif) {
+                        } else if (setbot.templateMsg) {
                         hisoka.send5ButMsg(m.chat, anu, hisoka.user.name, btn)
-                        } else if (setbot.templateGif) {
+                        } else if (setbot.templateLocation) {
                         hisoka.send5ButLoc(m.chat, anu, hisoka.user.name, global.thumb, btn)
                         }
                      }
@@ -3295,15 +3295,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -3393,15 +3393,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -3478,15 +3478,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -3570,15 +3570,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -3657,15 +3657,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -3747,15 +3747,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -3855,15 +3855,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -3944,15 +3944,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -4030,15 +4030,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -4127,15 +4127,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -4214,15 +4214,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -4299,15 +4299,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -4343,15 +4343,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -4376,15 +4376,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -4426,15 +4426,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -4478,15 +4478,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateGif) {
+                                        if (setbot.templateImage) {
                                         hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
                                         hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateMsg) {
                                         hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                        } else if (setbot.templateGif) {
+                                        } else if (setbot.templateLocation) {
                                         hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                         }
                                      }
@@ -4531,15 +4531,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                             }
                                                         }]
                                                      let setbot = db.data.settings[botNumber]
-                                                    if (setbot.templateGif) {
+                                                    if (setbot.templateImage) {
                                                     hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
                                                     } else if (setbot.templateGif) {
                                                     hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
                                                     } else if (setbot.templateVid) {
                                                     hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
-                                                    } else if (setbot.templateGif) {
+                                                    } else if (setbot.templateMsg) {
                                                     hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
-                                                    } else if (setbot.templateGif) {
+                                                    } else if (setbot.templateLocation) {
                                                     hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
                                                     }
                                                  }
