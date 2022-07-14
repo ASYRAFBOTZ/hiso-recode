@@ -2821,7 +2821,7 @@ case 'command':{
                                         {
                                             "title": "Information Of The Bot",
                                             "description": "මෙය හරහ මෙම Bot ගේ අයිති කරුගෙ විස්තර ලබ ගත හැක",
-                                            "rowId": `${prefix}oshada`
+                                            "rowId": `${prefix}pakaya`
                                         },
                                         {
                                             "title": "owner Menu",
@@ -4491,18 +4491,33 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                         }
                                      }
                             break
-                            case'oshada': {
-                                anu = `hellow I am Vimukthi Oshada
-				 Owner Of The ⛧ S A T H A N ⸸ Bot
-                                ☢ I am From Sri Lanka 🇱🇰
-                                My age 
-                                ☢ 17 Years Old 
-                                Base Owner
-                                ☢ DikaArdnt
-                                Recode 
-                                ツ Me (Vimukthi Oshada)
-                                Thank For Using My Bot 😍
-                                Good Luck DUDE ღ
+                            case'pakaya': {
+                                anu = `
+	        ╭─❏ *『 INFO USER 』*
+                │ ⛧⸸  Name : ${pushname}
+                │ ⛧⸸  Number : ${m.sender.split('@')[0]}
+                ╰───────────────❏
+                💘 Hellow I am ⛧ S A T H A N ⸸ User Bot 💞
+                  
+                        *[   INFORMATION   ]*
+                _⫹⫺ Your Name : ${pushname}_
+                _⫹⫺ Library : Baileys-Md_
+                _⫹⫺ Version : 5.0.0_
+                _⫹⫺ Language : Javascript_
+                _⫹⫺ Author : Vimukthi Oshada
+                _⫹⫺ Date Server :  ${moment.tz('Asia/Jayapura').format('DD/MM/YY')}_
+                _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_   
+hellow I am Vimukthi Oshada
+Owner Of The ⛧ S A T H A N ⸸ Bot
+☢ I am From Sri Lanka 🇱🇰
+My age 
+☢ 17 Years Old 
+Base Owner
+☢ DikaArdnt
+Recode 
+ツ Me (Vimukthi Oshada)
+Thank For Using My Bot 😍
+Good Luck DUDE ღ
                                 `
                             let btn = [{
                                                             urlButton: {
