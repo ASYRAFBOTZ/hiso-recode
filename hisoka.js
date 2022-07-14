@@ -2203,7 +2203,7 @@ break
 	        case 'fbdl': case 'fb': case 'facebook': {
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
-                let anu = await fetchJson(api('sanuwa', 'https://sanuw-api.herokuapp.com/docs/download/facebook?url=', { url: text }, 'sanuwa'))
+                let anu = await fetchJson(api('zenz', '/api/downloader/fa', { url: text }, '92170802cb1a'))
                 hisoka.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `⛧⸸ Title : ${anu.result.title}`}, { quoted: m })
             }
             break
