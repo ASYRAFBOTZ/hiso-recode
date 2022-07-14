@@ -160,15 +160,14 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
             scheduled: true,
             timezone: "Asia/Jakarta"
         })
-        
-	// auto set bio
-	if (db.data.settings[botNumber].autobio) {
-	    let setting = global.db.data.settings[botNumber]
-	    if (new Date() * 1 - setting.status > 1000) {
-		let uptime = await runtime(process.uptime())
-		await hisoka.setStatus(`${hisoka.user.name} ⛧ S A T H A N ⸸ | Runtime : ${runtime(uptime)}`)
-		setting.status = new Date() * 1
-	    }
+          //auto bio
+	  if (db.data.settings[botNumber].autobio) {
+        let setting = global.db.data.settings[botNumber]
+        if (new Date() * 1 - setting.status > 1000) {
+        let uptime = await runtime(process.uptime())
+        await hisoka.setStatus(`${'©V I M U K T H I - ⛧ S A T H A N ⸸  | BOT ONLINE'} | Runtime : ${runtime(process.uptime())} `)
+        setting.status = new Date() * 1
+        }
 	}
 	    
 	  // Anti Link
