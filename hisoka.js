@@ -561,7 +561,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⛧⸸ 13k Per Group via E-Walet 1 Month\n⛧⸸ 18k via pulsa 1 Month\n\n Premium Price Bot\n⛧⸸ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6288292024190 (Owner)\n\nDonate For Me : \n\n⛧⸸ Paypal : https://www.paypal.me/Cakhaho\n⛧⸸ Saweria : https://saweria.co/DikaArdnt` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'Not Avalibale' }, { quoted: m })
             }
             break
             case 'sc': {
@@ -2827,7 +2827,7 @@ case 'command':{
                                         {
                                             "title": "Information Of The Bot",
                                             "description": "මෙය හරහ මෙම Bot ගේ අයිති කරුගෙ විස්තර ලබ ගත හැක",
-                                            "rowId": `${prefix}oshada`
+                                            "rowId": `${prefix}infoBot`
                                         },
                                         {
                                             "title": "owner Menu",
@@ -4497,18 +4497,17 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                         }
                                      }
                             break
-                            case'oshada' : {
-                                anu = `
-hellow I am Vimukthi Oshada :) #Owner Of The ⛧ S A T H A N ⸸ Bot
-☢ I am From Sri Lanka 🇱🇰
-My age :
-☢ 17 Years Old 
-Base Owner
-☢ DikaArdnt
- Recode 
-ツ Me (Vimukthi Oshada)
- Thank For Using My Bot 😍
-Good Luck DUDE ღ
+                            case'infoBot': {
+                                anu = `hellow I'am _Vimukthi Oshada_ :) #Owner Of The ⛧ S A T H A N ⸸ Bot
+                                ☢ I am From Sri Lanka 🇱🇰
+                                My age :-
+                                ☢ 17 Years Old 
+                                Base Owner
+                                ☢ _DikaArdnt_
+                                Recode 
+                                ツ Me (Vimukthi Oshada)
+                                Thank For Using My Bot 😍
+                                Good Luck DUDE ღ
                                 `
                             let btn = [{
                                                             urlButton: {
