@@ -1232,7 +1232,7 @@ break
                             }, {
                                 quickReplyButton: {
                                     displayText: '⛧ S A T H A N ⸸',
-                                    id: 'menu'
+                                    id: 'command'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -1271,7 +1271,7 @@ break
                             }, {
                                 quickReplyButton: {
                                     displayText: '⛧ S A T H A N ⸸',
-                                    id: 'menu'
+                                    id: 'command'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -1581,7 +1581,7 @@ break
         })
         }
         break
-	    case 'play': case 'ytplay': case 'song' : {
+	    case 'play': case 'ytplay': case 'song' :{
                 if (!text) throw `Example : ${prefix + command} story wa anime`
                 let yts = require("yt-search")
                 let search = await yts(text)
@@ -2797,7 +2797,7 @@ let capt = `⛧⸸ Title: ${judul}
 
 
             // Button List
-case 'menu':{
+case 'command':{
     let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     listMessage :{
                         title: `${ucapanWaktu} ${pushname}\n\nJika Kamu Menemukan Kesalahan Jangan Nanya Ke owner, Mungkin Itu gara² Lu Sendiri\n`,
@@ -2932,7 +2932,7 @@ case 'menu':{
                 }
                 break
     
-            case 'list': case 'command': case 'help': case '?': {
+            case 'list': case 'menu': case 'help': case '?': {
                 anu = `
 ╭─❏ *『 INFO USER 』*
 │ ⛧⸸  Name : ${pushname}
@@ -3201,7 +3201,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                             }, {
                                 quickReplyButton: {
                                     displayText: '⛧ S A T H A N ⸸',
-                                    id: 'menu'
+                                    id: 'command'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3291,7 +3291,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: ' ⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -3389,7 +3389,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -3474,7 +3474,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -3566,7 +3566,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -3653,7 +3653,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -3743,7 +3743,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -3851,7 +3851,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -3940,7 +3940,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -4026,7 +4026,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -4123,7 +4123,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -4210,7 +4210,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -4295,7 +4295,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -4339,7 +4339,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -4422,7 +4422,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -4474,7 +4474,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }, {
                                                 quickReplyButton: {
                                                     displayText: '⛧ S A T H A N ⸸',
-                                                    id: 'menu'
+                                                    id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
@@ -4527,7 +4527,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                         }, {
                                                             quickReplyButton: {
                                                                 displayText: '⛧ S A T H A N ⸸',
-                                                                id: 'menu'
+                                                                id: 'command'
                                                             }
                                                         }]
                                                      let setbot = db.data.settings[botNumber]
