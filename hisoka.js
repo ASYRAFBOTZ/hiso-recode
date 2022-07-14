@@ -47,10 +47,35 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
         const isCreator = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const itsMe = m.sender == botNumber ? true : false
         const text = q = args.join(" ")
-        const fatkuns = (m.quoted || m)
-        const quoted = (fatkuns.mtype == 'buttonsMessage') ? fatkuns[Object.keys(fatkuns)[1]] : (fatkuns.mtype == 'templateMessage') ? fatkuns.hydratedTemplate[Object.keys(fatkuns.hydratedTemplate)[1]] : (fatkuns.mtype == 'product') ? fatkuns[Object.keys(fatkuns)[0]] : m.quoted ? m.quoted : m
+        const from = m.chat
+        const quoted = m.quoted ? m.quoted : m
         const mime = (quoted.msg || quoted).mimetype || ''
         const isMedia = /image|video|sticker|audio/.test(mime)
+        
+        const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
+        if(time2 < "23:59:00"){
+        var ucapanWaktu = 'සුභ රාත්රියක් 🏙️'
+}
+        if(time2 < "19:00:00"){
+        var ucapanWaktu = 'සුභ සන්ද්යාවක් 🌆'
+}
+        if(time2 < "18:00:00"){
+        var ucapanWaktu = 'සුභ සන්ධ්යාවක් 🌇'
+}
+        if(time2 < "15:00:00"){
+        var ucapanWaktu = 'සුභ සන්ධ්යාවක් 🌤️'
+}
+        if(time2 < "10:00:00"){
+        var ucapanWaktu = 'සුභ උදෑසනක් 🌄'
+}
+        if(time2 < "05:00:00"){
+        var ucapanWaktu = 'සුභ පැතුම්  🌆'
+}
+        if(time2 < "03:00:00"){
+        var ucapanWaktu = 'Good Night '
+}
+
+
 	
         // Group
         const groupMetadata = m.isGroup ? await hisoka.groupMetadata(m.chat).catch(e => {}) : ''
@@ -1206,8 +1231,8 @@ break
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
+                                    displayText: '⛧ S A T H A N ⸸',
+                                    id: '⛧ S A T H A N ⸸'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -1245,8 +1270,8 @@ break
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
+                                    displayText: '⛧ S A T H A N ⸸',
+                                    id: '⛧ S A T H A N ⸸'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -2775,6 +2800,155 @@ let capt = `⭔ Title: ${judul}
                 }
             }
             break
+
+
+            // Button List
+case 'command':{
+    let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                    listMessage :{
+                        title: `${ucapanWaktu} ${pushname}\n\nJika Kamu Menemukan Kesalahan Jangan Nanya Ke owner, Mungkin Itu gara² Lu Sendiri\n`,
+                        description: "*Klik Tombol Dibawah Untuk Melihat Menu Yang Tersedia👇*",
+                        buttonText: "KLIK DISINI",
+                        footerText: "⛧ S A T H A N ⸸ ",
+                        listType: "SINGLE_SELECT",
+                        sections: [{
+                                    "title": "All Menu Bot",
+                                    "rows": [
+                                        {
+                                            "title": "All Menu",
+                                            "description": "Menampikan Semua Menu",
+                                            "rowId": `${prefix}allmenu`
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "List Menu Bot",
+                                    "rows": [
+                                        {
+                                            "title": "owner Menu",
+                                            "description": "Menampilkan owner Menu",
+                                            "rowId": `${prefix}ownermenu`
+                                        },
+                                        {
+                                            "title": "Group Menu",
+                                            "description": "Menampilkan Group Menu",
+                                            "rowId": `${prefix}groupmenu`
+                                        },
+                                        {
+                                            "title": "Webzone Menu",
+                                            "description": "Menampilkan Webzone Menu",
+                                            "rowId": `${prefix}webzonemenu`
+                                        },
+                                        {
+                                            "title": "Download Menu",
+                                            "description": "Menampilkan Download Menu",
+                                            "rowId": `${prefix}downloadermenu`
+                                        },
+                                        {
+                                            "title": "Search Menu",
+                                            "description": "Menampilkan Search Menu",
+                                            "rowId": `${prefix}searchmenu`
+                                        },
+                                        {
+                                            "title": "Random Menu",
+                                            "description": "Menampilkan Random Menu",
+                                            "rowId": `${prefix}randommenu`
+                                        },
+                                        {
+                                            "title": "Text Pro Menu",
+                                            "description": "Menampilkan Text Pro Menu",
+                                            "rowId": `${prefix}textpromenu`
+                                        },
+                                        {
+                                            "title": "Photo Oxy Menu",
+                                            "description": "Menampilkan Photo Oxy Menu",
+                                            "rowId": `${prefix}photooxymenu`
+                                        },
+                                        {
+                                            "title": "Ephoto Menu",
+                                            "description": "Menampilkan Ephoto Menu",
+                                            "rowId": `${prefix}ephotomenu`
+                                        },
+                                        {
+                                            "title": "Fun Menu",
+                                            "description": "Menampilkan Fun Menu",
+                                            "rowId": `${prefix}funmenu`
+                                        },
+                                        {
+                                            "title": "Primbon Menu",
+                                            "description": "Menampilkan Primbon Menu",
+                                            "rowId": `${prefix}primbonmenu`
+                                        },
+                                        {
+                                            "title": "Convert Menu",
+                                            "description": "Menampilkan Convert Menu",
+                                            "rowId": `${prefix}convertmenu`
+                                        },
+                                        {
+                                            "title": "Main Menu",
+                                            "description": "Menampilkan Main Menu",
+                                            "rowId": `${prefix}mainmenu`
+                                        },
+                                        {
+                                            "title": "Database Menu",
+                                            "description": "Menampilkan Database Menu",
+                                            "rowId": `${prefix}databasemenu`
+                                        },
+                                        {
+                                            "title": "Anonymous Menu",
+                                            "description": "Menampilkan Anonymous Menu",
+                                            "rowId": `${prefix}anonymousmenu`
+                                        },
+                                        {
+                                            "title": "Islamic Menu",
+                                            "description": "Menampilkan Islamic Menu",
+                                            "rowId": `${prefix}islamicmenu`
+                                        },
+                                        {
+                                            "title": "Voice Changer",
+                                            "description": "Menampilkan Voice Changer Menu",
+                                            "rowId": `${prefix}voicechangermenu`
+                                        }
+                                            ]
+                                            },
+                                {
+                                    "title": "Creator👤",
+                                    "rows": [
+                                        {
+                                            "title": "Creator",
+                                            "description": "Menampilkan Nomor Creator",
+                                            "rowId": `${prefix}owner`
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Sewabot🤖",
+                                    "rows": [
+                                        {
+                                            "title": "Sewabot",
+                                            "description": "Menampilkan List Sewabot",
+                                            "rowId": `${prefix}sewabot`
+                                        }
+                                    ]
+                                },
+                                {
+                                    "title": "Thanks To👑",
+                                    "rows": [
+                                        {
+                                            "title": "Contributor",
+                                            "description": "Menampilkan Ungkapan Terima Kasih",
+                                            "rowId": `${prefix}contributor`
+                                        }
+                                    ]
+                                }
+                            ],
+              listType: 1
+                    }
+                }), { userJid: m.chat, quoted: m })
+                hisoka.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                }
+                break
+    
             case 'list': case 'menu': case 'help': case '?': {
                 anu = `
                 💘 Hellow I am ⛧ S A T H A N ⸸ User Bot 💞
@@ -3038,8 +3212,8 @@ let capt = `⭔ Title: ${judul}
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
-                                    id: 'sc'
+                                    displayText: '⛧ S A T H A N ⸸',
+                                    id: '⛧ S A T H A N ⸸'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
