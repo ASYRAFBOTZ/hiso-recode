@@ -10,11 +10,13 @@ const chalk = require('chalk')
 // Website Api
 global.APIs = {
 	zenz: 'https://api.zeeoneofc.xyz',
+	sanuwa: 'https://sanuw-api.herokuapp.com'
 }
 
 // Apikey Website Api
 global.APIKeys = {
 	'https://api.zeeoneofc.xyz': 'XGwvPEbx',
+	'https://sanuw-api.herokuapp.com' :'sanuwa'
 }
 
 // Other
