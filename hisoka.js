@@ -2827,7 +2827,7 @@ case 'command':{
                                         {
                                             "title": "Information Of The Bot",
                                             "description": "මෙය හරහ මෙම Bot ගේ අයිති කරුගෙ විස්තර ලබ ගත හැක",
-                                            "rowId": `${prefix}infoBot`
+                                            "rowId": `${prefix}oshada`
                                         },
                                         {
                                             "title": "owner Menu",
@@ -4497,7 +4497,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                         }
                                      }
                             break
-                            case'infoBot' : {
+                            case'oshada' : {
                                 anu = `hellow I'am _Vimukthi Oshada_ :) #Owner Of The ⛧ S A T H A N ⸸ Bot
                                 ☢ I am From Sri Lanka 🇱🇰
                                 My age :-
