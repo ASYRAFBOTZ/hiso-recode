@@ -4497,7 +4497,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                         }
                                      }
                             break
-                            case'infoBot' {
+                            case'infoBot' : {
                                 anu = `hellow I'am _Vimukthi Oshada_ :) #Owner Of The ⛧ S A T H A N ⸸ Bot
                                 ☢ I am From Sri Lanka 🇱🇰
                                 My age :-
