@@ -4493,9 +4493,9 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                             break
                             case'infoBot': {
                                 anu = `hellow I am Vimukthi Oshada
-				:) #Owner Of The ⛧ S A T H A N ⸸ Bot
+				 Owner Of The ⛧ S A T H A N ⸸ Bot
                                 ☢ I am From Sri Lanka 🇱🇰
-                                My age :-
+                                My age 
                                 ☢ 17 Years Old 
                                 Base Owner
                                 ☢ DikaArdnt
