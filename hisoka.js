@@ -561,11 +561,10 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-           hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\nkkkk ` }, { quoted: m })
-            }
+           hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\nMau Donasi/Sewabot/Jadi Premium ?\nSewa Bot :\n10k Permanent\n\nPayment :\nDana\nPulsa(+5k)\n\nDonasi :\nDana (085646606905)\nGopay (081946945315\nPulsa (081946945315)\n\nPremium :\n5k Permanen\n\nPayment :\nDana\nPulsa(+5k)` }, { quotes: m }) 
             break
             case 'sc': {
-                m.reply('Script : https://github.com/oshadaXD\n\n Dont Forget Give Star\n\n')
+                m.reply('SC Ori :\nhttps://github.com/DikaAdrnt\nsC Recode :\nRecode Sendiri Lah Kntl')
             }
             break
             case 'chat': {
@@ -4011,7 +4010,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }]
                                          let setbot = db.data.settings[botNumber]
                                         if (setbot.templateImage) {
-                                        hisoka.send5ButImg(m.chat, anu, '', global.thumb, btn, global.thumb)
+                                        hisoka.send5ButImg(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
                                         hisoka.send5ButGif(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
@@ -4106,15 +4105,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                             }]
                                          let setbot = db.data.settings[botNumber]
                                         if (setbot.templateImage) {
-                                        hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
+                                        hisoka.send5ButImg(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
-                                        hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButGif(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
-                                        hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButVid(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateMsg) {
-                                        hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
+                                        hisoka.send5ButMsg(m.chat, anu, 'YT : MikAzu 929', btn)
                                         } else if (setbot.templateLocation) {
-                                        hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
+                                        hisoka.send5ButLoc(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn)
                                         }
                                      }
                             break
@@ -4122,17 +4121,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                 anu = `${ucapanWaktu} ${pushname}
                 ╭─❏ *『 INFO USER 』*
                 │ ⛧⸸  Name : ${pushname}
-                │ ⛧⸸  Number : ${m.sender.split('@')[0]}
-                
+                │ ⛧⸸  Number : ${m.sender.split('@')[0]}              
                 ╰───────────────❏
-                💘 Hellow I am ⛧ S A T H A N ⸸ User Bot 💞
                   
                         *[   INFORMATION   ]*
-                _⫹⫺ Your Name : ${pushname}_
+                _⫹⫺ Name Bot : MikAzu Bot_
                 _⫹⫺ Library : Baileys-Md_
-                _⫹⫺ Version : 5.0.0_
+                _⫹⫺ Version : 1.0.0_
                 _⫹⫺ Language : Javascript_
-                _⫹⫺ Author : Vimukthi Oshada
+                _⫹⫺ Author : Asyraf_
                 _⫹⫺ Date Server :  ${moment.tz('Asia/Jayapura').format('DD/MM/YY')}_
                 _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_   
                                    
@@ -4167,13 +4164,13 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                 ╰───────────────❏`
                 let btn = [{
                                                 urlButton: {
-                                                    displayText: 'owner📽️',
-                                                    url: 'wa.me/+94775792013'
+                                                    displayText: 'Youtube',
+                                                    url: 'https://bit.ly/3c0WJz9'
                                                 }
                                                 }, {
                                                 urlButton: {
-                                                    displayText: 'Group Bot🔗',
-                                                    url: 'Update Soon'
+                                                    displayText: 'Group Bot',
+                                                    url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
                                                 }
                                             }, {
                                                 quickReplyButton: {
@@ -4187,21 +4184,21 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }  
                                             }, {
                                                 quickReplyButton: {
-                                                    displayText: '⛧ S A T H A N ⸸',
+                                                    displayText: 'Kembali Ke Menu',
                                                     id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
-                                        if (setbot.templateImage) {
-                                        hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
+                                        if (setbot.templateImage') {
+                                        hisoka.send5ButImg(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
-                                        hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButGif(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
-                                        hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButVid(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateMsg) {
-                                        hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
+                                        hisoka.send5ButMsg(m.chat, anu, 'YT : MikAzu 929', btn)
                                         } else if (setbot.templateLocation) {
-                                        hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
+                                        hisoka.send5ButLoc(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn)
                                         }
                                      }
                             break
@@ -4209,17 +4206,15 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                 anu = `${ucapanWaktu} ${pushname}
                 ╭─❏ *『 INFO USER 』*
                 │ ⛧⸸  Name : ${pushname}
-                │ ⛧⸸  Number : ${m.sender.split('@')[0]}
-                
+                │ ⛧⸸  Number : ${m.sender.split('@')[0]}                
                 ╰───────────────❏
-                💘 Hellow I am ⛧ S A T H A N ⸸ User Bot 💞
                   
                         *[   INFORMATION   ]*
-                _⫹⫺ Your Name : ${pushname}_
+                _⫹⫺ Name Bot : MikAzu Bot_
                 _⫹⫺ Library : Baileys-Md_
-                _⫹⫺ Version : 5.0.0_
+                _⫹⫺ Version : 1.0.0_
                 _⫹⫺ Language : Javascript_
-                _⫹⫺ Author : Vimukthi Oshada
+                _⫹⫺ Author : Asyraf_
                 _⫹⫺ Date Server :  ${moment.tz('Asia/Jayapura').format('DD/MM/YY')}_
                 _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_   
                                    
@@ -4252,13 +4247,13 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                 ╰───────────────❏`
                 let btn = [{
                                                 urlButton: {
-                                                    displayText: 'owner📽️',
-                                                    url: 'wa.me/+94775792013'
+                                                    displayText: 'Youtube',
+                                                    url: 'https://bit.ly/3c0WJz9'
                                                 }
                                                 }, {
                                                 urlButton: {
-                                                    displayText: 'Group Bot🔗',
-                                                    url: 'Update Soon'
+                                                    displayText: 'Group Bot',
+                                                    url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
                                                 }
                                             }, {
                                                 quickReplyButton: {
@@ -4272,21 +4267,21 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }  
                                             }, {
                                                 quickReplyButton: {
-                                                    displayText: '⛧ S A T H A N ⸸',
+                                                    displayText: 'Kembali ke Menu',
                                                     id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
                                         if (setbot.templateImage) {
-                                        hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
+                                        hisoka.send5ButImg(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
-                                        hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButGif(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
-                                        hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButVid(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateMsg) {
-                                        hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
+                                        hisoka.send5ButMsg(m.chat, anu, 'YT : MikAzu 929', btn)
                                         } else if (setbot.templateLocation) {
-                                        hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
+                                        hisoka.send5ButLoc(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn)
                                         }
                                      }
                             break
@@ -4296,13 +4291,13 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                 anu = `${ucapanWaktu} ${pushname}\n\nHellow ${global.namabot}, 💗I am A Whatsapp Multi Device User Bot.💗 \n\n ♈${global.namabot} Wellcome To The Bot  menu ${global.namaowner} ☯️ My Creator Is '''Vimukthi'''.\n\n💘 You Can Find Any Bug Tell The Creator😁`
                                 let btn = [{
                                                 urlButton: {
-                                                    displayText: 'owner📽️',
-                                                    url: 'Update Soon'
+                                                    displayText: 'Youtube',
+                                                    url: 'https://bit.ly/3c0WJz9'
                                                 }
                                                 }, {
                                                 urlButton: {
-                                                    displayText: 'Group Bot🔗',
-                                                    url: 'Update Soon'
+                                                    displayText: 'Group Bot',
+                                                    url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
                                                 }
                                             }, {
                                                 quickReplyButton: {
@@ -4316,54 +4311,55 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }  
                                             }, {
                                                 quickReplyButton: {
-                                                    displayText: '⛧ S A T H A N ⸸',
+                                                    displayText: 'Menu MikAzu',
                                                     id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
                                         if (setbot.templateImage) {
-                                        hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
+                                        hisoka.send5ButImg(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
-                                        hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButGif(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
-                                        hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButVid(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateMsg) {
-                                        hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
+                                        hisoka.send5ButMsg(m.chat, anu, 'YT : MikAzu 929', btn)
                                         } else if (setbot.templateLocation) {
-                                        hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
+                                        hisoka.send5ButLoc(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn)
                                         }
                                      }
                             break
                 
                 case 'donasi': {
                 anu = `╭─❏ *『 DONASI 』*
-                │ ⛧⸸  Dana : 94775792013
-                │ ⛧⸸  Pulsa : 94775792013,94775792013
+                │ ⛧⸸  Dana : 085646606905
+                │ ⛧⸸  Gopay : 081946945315
+                │ ⛧⸸  Pulsa : 081946945315,085646606905
                 ╰───────────────❏
                 
                 *TERIMA KASIH BUAT YANG SUDAH MAU DONASI🤗*`
                 let btn = [{
                                                 urlButton: {
-                                                    displayText: 'owner📽️',
-                                                    url: '94775792013'
+                                                    displayText: 'Youtube',
+                                                    url: 'https://bit.ly/3c0WJz9'
                                                 }
                                                 }, {
                                                 urlButton: {
-                                                    displayText: 'Group Bot🔗',
-                                                    url: 'Update Soon'
+                                                    displayText: 'Group Bot',
+                                                    url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
                                         if (setbot.templateImage) {
-                                        hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
+                                        hisoka.send5ButImg(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
-                                        hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButGif(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
-                                        hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButVid(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateMsg) {
-                                        hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
+                                        hisoka.send5ButMsg(m.chat, anu, 'YT : MikAzu 929', btn)
                                         } else if (setbot.templateLocation) {
-                                        hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
+                                        hisoka.send5ButLoc(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn)
                                         }
                                      }
                             break
@@ -4374,18 +4370,16 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                 3. Jangan Mengeksploitasi Bot ❎
                 
                 Sanksi : *Warn/Soft Block*
-                
-                හායි I am Whatsapp User Bot Bulding On stage Creator https://wa.me/+94775792013
-                Ini`
+                Please Don't Spam & Call`
                 let btn = [{
                                                 urlButton: {
-                                                    displayText: 'owner📽️',
-                                                    url: 'wa.me/+94775792013'
+                                                    displayText: 'Youtube',
+                                                    url: 'https://bit.ly/3c0WJz9'
                                                 }
                                                 }, {
                                                 urlButton: {
-                                                    displayText: 'Group Bot🔗',
-                                                    url: 'Update Soon'
+                                                    displayText: 'Group Bot',
+                                                    url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
                                                 }
                                                 }, {
                                                 quickReplyButton: {
@@ -4399,21 +4393,21 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }  
                                             }, {
                                                 quickReplyButton: {
-                                                    displayText: '⛧ S A T H A N ⸸',
+                                                    displayText: 'Kembali Ke MenU',
                                                     id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
                                         if (setbot.templateImage) {
-                                        hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
+                                        hisoka.send5ButImg(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
-                                        hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButGif(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
-                                        hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButVid(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateMsg) {
-                                        hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
+                                        hisoka.send5ButMsg(m.chat, anu, 'YT : MikAzu 929', btn)
                                         } else if (setbot.templateLocation) {
-                                        hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
+                                        hisoka.send5ButLoc(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn)
                                         }
                                      }
                             break
@@ -4426,18 +4420,18 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                 •Fandy 
                 •Abuzz 
                 •Sonel 
-                •⛧ S A T H A N ⸸ 
+                •Asyraf (Recorder) 
                 Penyedia Rest Api :
                 https://zenzapis.xyz`
                     let btn = [{
                                                 urlButton: {
-                                                    displayText: 'owner📽️',
-                                                    url: 'wa.me/+94775792013'
+                                                    displayText: 'Youtube',
+                                                    url: 'https://bit.ly/3c0WJz9'
                                                 }
                                                 }, {
                                                 urlButton: {
-                                                    displayText: 'Group Bot🔗',
-                                                    url: 'Update Soon'
+                                                    displayText: 'Group Bot',
+                                                    url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
                                                 }
                                                 }, {
                                                 quickReplyButton: {
@@ -4451,21 +4445,21 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }  
                                             }, {
                                                 quickReplyButton: {
-                                                    displayText: '⛧ S A T H A N ⸸',
+                                                    displayText: 'Kembali Ke Menu',
                                                     id: 'command'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
                                         if (setbot.templateImage) {
-                                        hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
+                                        hisoka.send5ButImg(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn, global.thumb)
                                         } else if (setbot.templateGif) {
-                                        hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButGif(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateVid) {
-                                        hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                        hisoka.send5ButVid(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                         } else if (setbot.templateMsg) {
-                                        hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
+                                        hisoka.send5ButMsg(m.chat, anu, 'YT : MikAzu 929', btn)
                                         } else if (setbot.templateLocation) {
-                                        hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
+                                        hisoka.send5ButLoc(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn)
                                         }
                                      }
                             break
@@ -4475,37 +4469,28 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                 │ ⛧⸸  Name : ${pushname}
                 │ ⛧⸸  Number : ${m.sender.split('@')[0]}
                 ╰───────────────❏
-                💘 Hellow I am ⛧ S A T H A N ⸸ User Bot 💞
                   
                         *[   INFORMATION   ]*
-                _⫹⫺ Your Name : ${pushname}_
+                _⫹⫺ Name Bot : MikAzu Bot_
                 _⫹⫺ Library : Baileys-Md_
-                _⫹⫺ Version : 5.0.0_
+                _⫹⫺ Version : 1.0.0_
                 _⫹⫺ Language : Javascript_
-                _⫹⫺ Author : Vimukthi Oshada
+                _⫹⫺ Author : Asyraf_
                 _⫹⫺ Date Server :  ${moment.tz('Asia/Jayapura').format('DD/MM/YY')}_
                 _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_   
-hellow I am Vimukthi Oshada
-Owner Of The ⛧ S A T H A N ⸸ Bot
-☢ I am From Sri Lanka 🇱🇰
-My age 
-☢ 17 Years Old 
-Base Owner
-☢ DikaArdnt
-Recode 
-ツ Me (Vimukthi Oshada)
-Thank For Using My Bot 😍
-Good Luck DUDE ღ
-                                `
-                            let btn = [{
+Bot Ini Adalah Bot Whatsapp Md(Multi Device) 
+Bot Ini Di Recode Oleh Asyraf Dengan Node Js Dan Java Script
+Dia Ber Umur 17 Sehari" Dia Belajar Dan Me Recode Script BotWhatsapp
+`          
+                 let btn = [{
                                                             urlButton: {
-                                                                displayText: 'owner📽️',
-                                                                url: 'wa.me/+94775792013'
+                                                                displayText: 'Youtube',
+                                                                url: 'https://bit.ly/3c0WJz9'
                                                             }
                                                             }, {
                                                             urlButton: {
-                                                                displayText: 'Group Bot🔗',
-                                                                url: 'Update Soon'
+                                                                displayText: 'Group Bot',
+                                                                url: 'https://chat.whatsapp.com/CRrj0z3HgeX39XHNUt0M9V'
                                                             }
                                                             }, {
                                                             quickReplyButton: {
@@ -4519,21 +4504,21 @@ Good Luck DUDE ღ
                                                             }  
                                                         }, {
                                                             quickReplyButton: {
-                                                                displayText: '⛧ S A T H A N ⸸',
+                                                                displayText: 'Kembali Ke Menu',
                                                                 id: 'command'
                                                             }
                                                         }]
                                                      let setbot = db.data.settings[botNumber]
                                                     if (setbot.templateImage) {
-                                                    hisoka.send5ButImg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn, global.thumb)
+                                                    hisoka.send5ButImg(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn, global.thumb)
                                                     } else if (setbot.templateGif) {
-                                                    hisoka.send5ButGif(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                                    hisoka.send5ButGif(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                                     } else if (setbot.templateVid) {
-                                                    hisoka.send5ButVid(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.visoka, btn, global.thumb)
+                                                    hisoka.send5ButVid(m.chat, anu, 'YT : MikAzu 929', global.visoka, btn, global.thumb)
                                                     } else if (setbot.templateMsg) {
-                                                    hisoka.send5ButMsg(m.chat, anu, '© ⛧ S A T H A N ⸸ ', btn)
+                                                    hisoka.send5ButMsg(m.chat, anu, 'YT : MikAzu 929', btn)
                                                     } else if (setbot.templateLocation) {
-                                                    hisoka.send5ButLoc(m.chat, anu, '© ⛧ S A T H A N ⸸ ', global.thumb, btn)
+                                                    hisoka.send5ButLoc(m.chat, anu, 'YT : MikAzu 929', global.thumb, btn)
                                                     }
                                                  }
                                         break
