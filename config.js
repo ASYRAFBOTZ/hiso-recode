@@ -20,10 +20,10 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['94775792013']
-global.premium = ['94775792013']
-global.packname =  process.env.PACKNAME ||'⛧ S A T H A N ⸸'
-global.author = '⛧ S A T H A N ⸸'
+global.owner = ['6281946945315']
+global.premium = ['6281946945315']
+global.packname =  process.env.PACKNAME ||'YT :'
+global.author = ' MikAzu 929'
 global.sessionName = 'hisoka'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
