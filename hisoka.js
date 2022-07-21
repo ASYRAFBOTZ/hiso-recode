@@ -933,7 +933,7 @@ let buttonsVote = [
 
             let buttonMessageVote = {
                 text: teks_vote,
-                footer: '© ⛧ S A T H A N ⸸ ',
+                footer: 'YT : MikAzu 929',
                 buttons: buttonsVote,
                 headerType: 1
             }
@@ -974,7 +974,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 
             let buttonMessageUpvote = {
                 text: teks_vote,
-                footer: 'YT : MikAzu 939'
+                footer: 'YT : MikAzu 929'
  ',
                 buttons: buttonsUpvote,
                 headerType: 1,
