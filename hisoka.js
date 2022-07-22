@@ -3551,8 +3551,8 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }  
                                             }, {
                                                 quickReplyButton: {
-                                                    displayText: 'Kembali Ke Menu'
-                                                    id: 'command'
+                                                    displayText: 'Sewa Bot☹️'
+                                                    id: 'sewa'
                                                 }
                                             }]
                                          let setbot = db.data.settings[botNumber]
