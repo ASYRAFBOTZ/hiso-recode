@@ -126,7 +126,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	    } else global.db.data.settings[botNumber] = {
 	    anticall: true,
 		status: 0,
-		autobio: false,
+		autobio: true,
 		templateImage: true,
 		templateVideo: false,
 		templateGif: false,
@@ -3379,7 +3379,7 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                                 }  
                                             }, {
                                                 quickReplyButton: {
-                                                    displayText: Kembalil Ke Menu',
+                                                    displayText: 'Kembalil Ke Menu',
                                                     id: 'command'
                                                 }
                                             }]
