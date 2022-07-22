@@ -561,10 +561,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-           hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\nMau Donasi/Sewabot/Jadi Premium ?\nSewa Bot :\n10k Permanent\n\nPayment :\nDana\nPulsa(+5k)\n\nDonasi :\nDana (085646606905)\nGopay (081946945315\nPulsa (081946945315)\n\nPremium :\n5k Permanen\n\nPayment :\nDana\nPulsa(+5k)` }, { quotes: m }) 
-            break
-            case 'sc': {
-                m.reply('SC Ori :\nhttps://github.com/DikaAdrnt\nsC Recode :\nRecode Sendiri Lah Kntl')
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\nMau Donasi/Sewabot/Jadi Premium ?\nSewa Bot :\n10k Permanent\n\nPayment :\nDana\nPulsa(+5k)\n\nDonasi :\nDana (085646606905)\nGopay (081946945315\nPulsa (081946945315)\n\nPremium :\n5k Permanen\n\nPayment :\nDana\nPulsa(+5k)` }, { quotes: m }) 
             }
             break
             case 'chat': {
@@ -3188,13 +3185,13 @@ _⫹⫺ Time Sever : ${moment.tz('Asia/Jayapura').format('HH:mm:ss')}_
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Speed Bot',
-                                    id: 'ping'
-                                }
-                            }, {
-                                quickReplyButton: {
                                     displayText: 'Owner Ganz',
                                     id: 'owner'
+                                }
+                            }, {
+                                urlButton: {
+                                    displayText: 'Instagram',
+                                    url: 'https://instagram.com/asyrafsixyouu'
                                 }  
                             }, {
                                 quickReplyButton: {
